@@ -75,7 +75,7 @@ function JobList() {
                 <>
                     {job.featured === true ? (
                         <div className='card-job' key={job.id}>
-                            <img className='logo' src={`../../images/ + ${job.logo}`} alt='logo' />
+                            <img className='logo' src={job.logo} alt='logo' />
                             <div className='card-info'>
                                 <div className='card-company'>{job.company}</div>
                                 {job.new === true && (
@@ -110,7 +110,7 @@ function JobList() {
                         </div>
                     ) :
                         <div className='card-jobs' key={job.id}>
-                            <img className='logo' src={`../../images/ + ${job.logo}`} alt='logo' />
+                            <img className='logo' src={job.logo} alt='logo' />
                             <div className='card-info'>
                                 <div className='card-company'>{job.company}</div>
                                 {job.new === true && (

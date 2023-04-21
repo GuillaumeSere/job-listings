@@ -11,6 +11,7 @@ import '../images/photosnap.svg';
 import '../images/shortly.svg';
 import './jobList.css';
 
+
 function JobList() {
 
     const [jobs, setJobs] = useState(jobData);
@@ -21,8 +22,6 @@ function JobList() {
         setJobs(jobData);
         setFilteredJobs(jobData);
     }, []);
-
-
 
     useEffect(() => {
         if (filters.length === 0) {

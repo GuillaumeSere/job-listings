@@ -7,8 +7,8 @@ import bgHeader2 from '../images/bg-header-mobile.svg'
 const Header = () => {
   return (
     <div className='header'>
-      <img className='bg-desktop' src={process.env.PUBLIC_URL + bgHeader1} alt="header" />
-      <img className='bg-mobile' src={process.env.PUBLIC_URL + bgHeader2} alt="header" />
+      <img className='bg-desktop' src={bgHeader1} alt="header" />
+      <img className='bg-mobile' src={bgHeader2} alt="header" />
     </div>
   )
 }

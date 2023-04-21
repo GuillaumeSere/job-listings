@@ -18,7 +18,7 @@
   {
     "id": 2,
     "company": "Manage",
-    "logo": "../../images/manage.svg",
+    "logo": "${process.env.REACT_APP_PUBLIC_URL}/images/manage.svg",
     "new": true,
     "featured": true,
     "position": "Fullstack Developer",

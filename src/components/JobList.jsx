@@ -1,16 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import jobData from '../data.json';
-import '../images/eyecam-co.svg';
-import '../images/faceit.svg';
-import '../images/icon-remove.svg';
-import '../images/insure.svg';
-import '../images/loop-studios.svg';
-import '../images/manage.svg';
-import '../images/myhome.svg';
-import '../images/photosnap.svg';
-import '../images/shortly.svg';
 import './jobList.css';
-
 
 function JobList() {
 
@@ -75,7 +65,7 @@ function JobList() {
                 <>
                     {job.featured === true ? (
                         <div className='card-job' key={job.id}>
-                            <img className='logo' src={job.logo} alt='logo' />
+                            <img className='logo' src={`${process.env.PUBLIC_URL}${job.logo}`} alt='logo' />
                             <div className='card-info'>
                                 <div className='card-company'>{job.company}</div>
                                 {job.new === true && (
@@ -110,7 +100,7 @@ function JobList() {
                         </div>
                     ) :
                         <div className='card-jobs' key={job.id}>
-                            <img className='logo' src={job.logo} alt='logo' />
+                            <img className='logo' src={` ${process.env.PUBLIC_URL}${job.logo}`} alt='logo' />
                             <div className='card-info'>
                                 <div className='card-company'>{job.company}</div>
                                 {job.new === true && (
